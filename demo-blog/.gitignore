@@ -1,0 +1,18 @@
+# 编译输出
+**/target/
+*.class
+
+# IDE 文件
+.idea/
+*.iml
+*.iws
+*.ipr
+.classpath
+.project
+.settings/
+.springBeans
+
+# 本地配置文件
+application.yml
+application-dev.yml
+
