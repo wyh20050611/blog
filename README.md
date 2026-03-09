@@ -99,17 +99,11 @@ sky:
 ```yaml
 spring:
   datasource:
-    url: jdbc:mysql://localhost:3306/blog?useUnicode=true&characterEncoding=utf-8&useSSL=false&serverTimezone=Asia/Shanghai
-    username: xxx
-    password: xxx
-  redis:
-    host: localhost
-    port: 6379
-    password: xxx
-
-jwt:
-  secret-key: xxx
-  expire-time: 7200
+    druid: 
+      driver-class-name: com.mysql.cj.jdbc.Driver
+      url: jdbc:mysql://localhost:3306/blog?useUnicode=true&characterEncoding=utf-8&useSSL=false&serverTimezone=Asia/Shanghai
+      username: xxx
+      password: xxx
 
 alioss:
   endpoint: xxx
@@ -142,7 +136,7 @@ npm install
 ## 运行项目
 
 ### 1. 启动后端服务
-
+- 在idea 中打开项目，模块导入后，点击maven的install
 - 运行 `blog-server` 模块中的 `BlogServerApplication.java` 类
 - 后端服务默认运行在 `http://localhost:8080`
 
